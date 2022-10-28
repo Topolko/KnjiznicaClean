@@ -1,0 +1,55 @@
+﻿@model Knjiznica.Core.Models.EditModels.RentEM
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Rent</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="RentId" />
+            <input type="hidden" asp-for="BookTitle" />
+            <input type="hidden" asp-for="MemberName" />
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.DateRented)
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.DateRented, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                    @Html.ValidationMessageFor(m => m.DateRented, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            @Html.DisplayNameFor(m=>m.Books)
+            @Html.DropDownListFor(m => m.BookId,
+            new SelectList(Model.Books, "Key", "Value")
+
+            ,new { @class = "form-control",
+            })
+
+            @Html.DisplayNameFor(m=>m.Member)
+            @Html.DropDownListFor(m => m.MemberId,
+            new SelectList(Model.Members, "Key", "Value")
+
+            ,new { @class = "form-control",
+            })
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

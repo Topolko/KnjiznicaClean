@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Knjiznica.Core.Models.Models.Autor>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Authors</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-action="AuthorsBooks" asp-route-id="@item.AutorId">
+                        @Html.DisplayFor(modelItem => item.FullName)
+                    </a>
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.AutorId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.AutorId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@if (ViewBag.Page > 0)
+{
+    <a href="@Url.Action("Index", new { page = ViewBag.Page - 1 })"
+   class="btn btn-default">
+        &laquo; Prev
+    </a>
+}
+@if (ViewBag.Page < ViewBag.MaxPage)
+{
+    <a href="@Url.Action("Index", new { page = ViewBag.Page + 1 })"
+   class="btn btn-default">
+        Next &raquo;
+    </a>
+}

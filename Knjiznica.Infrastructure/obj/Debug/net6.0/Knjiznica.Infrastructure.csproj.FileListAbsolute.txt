@@ -1,0 +1,17 @@
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\bin\Debug\net6.0\Knjiznica.Infrastructure.deps.json
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\bin\Debug\net6.0\Knjiznica.Infrastructure.runtimeconfig.json
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\bin\Debug\net6.0\Knjiznica.Infrastructure.dll
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\bin\Debug\net6.0\Knjiznica.Infrastructure.pdb
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\bin\Debug\net6.0\Knjiznica.Core.dll
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\bin\Debug\net6.0\Knjiznica.Core.pdb
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\obj\Debug\net6.0\Knjiznica.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\obj\Debug\net6.0\Knjiznica.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\obj\Debug\net6.0\Knjiznica.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\obj\Debug\net6.0\Knjiznica.Infrastructure.AssemblyInfo.cs
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\obj\Debug\net6.0\Knjiznica.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\obj\Debug\net6.0\Knjiznica.Infrastructure.csproj.CopyComplete
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\obj\Debug\net6.0\Knjiznica.Infrastructure.dll
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\obj\Debug\net6.0\refint\Knjiznica.Infrastructure.dll
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\obj\Debug\net6.0\Knjiznica.Infrastructure.pdb
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\obj\Debug\net6.0\Knjiznica.Infrastructure.genruntimeconfig.cache
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Infrastructure\obj\Debug\net6.0\ref\Knjiznica.Infrastructure.dll

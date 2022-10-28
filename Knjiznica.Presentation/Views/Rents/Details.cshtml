@@ -1,0 +1,42 @@
+﻿@model Knjiznica.Core.Models.ViewModels.RentViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Rent</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DateRented)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DateRented)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsLate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IsLate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MemberName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MemberName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BookTitle)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BookTitle)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.RentId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

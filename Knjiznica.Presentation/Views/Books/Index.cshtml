@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Knjiznica.Core.Models.ViewModels.BookViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Books</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["TitleSortParam"]">
+                    @Html.DisplayNameFor(model => model.Title)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["GenreSortParam"]">
+                    @Html.DisplayNameFor(model => model.GenreName)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["AuthorSortParam"]">
+                    @Html.DisplayNameFor(model => model.AuthorFullName)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["CopiesSortParam"]">
+                    @Html.DisplayNameFor(model => model.BrojPrimjeraka)
+                </a>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-action="BooksRents" asp-route-id="@item.BookId">
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GenreName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AuthorFullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BrojPrimjeraka)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.BookId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.BookId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@if (ViewBag.Page > 0)
+{
+    <a href="@Url.Action("Index", new { page = ViewBag.Page - 1 })"
+   class="btn btn-default">
+        &laquo; Prev
+    </a>
+}
+@if (ViewBag.Page < ViewBag.MaxPage)
+{
+    <a href="@Url.Action("Index", new { page = ViewBag.Page + 1 })"
+   class="btn btn-default">
+        Next &raquo;
+    </a>
+}

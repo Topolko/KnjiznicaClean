@@ -1,0 +1,5 @@
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Application\obj\Debug\net6.0\Knjiznica.Application.csproj.AssemblyReference.cache
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Application\obj\Debug\net6.0\Knjiznica.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Application\obj\Debug\net6.0\Knjiznica.Application.AssemblyInfoInputs.cache
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Application\obj\Debug\net6.0\Knjiznica.Application.AssemblyInfo.cs
+C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Application\obj\Debug\net6.0\Knjiznica.Application.csproj.CoreCompileInputs.cache

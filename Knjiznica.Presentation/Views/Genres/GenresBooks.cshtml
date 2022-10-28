@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Knjiznica.Core.Models.ViewModels.BookViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>All @ViewData["Name"] book</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["TitleSortParam"]">
+                    @Html.DisplayNameFor(model => model.Title)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["AuthorSortParam"]">
+                    @Html.DisplayNameFor(model => model.AuthorFullName)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["CopiesSortParam"]">
+                    @Html.DisplayNameFor(model => model.BrojPrimjeraka)
+                </a>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AuthorFullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BrojPrimjeraka)
+                </td>
+                <td>
+                    <a asp-controller="Books" asp-action="Edit" asp-route-id="@item.BookId">Edit</a> |
+                    <a asp-controller="Books" asp-action="Delete" asp-route-id="@item.BookId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

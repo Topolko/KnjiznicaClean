@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Knjiznica.Presentation.Models.ValutaViewModel>
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>View</h1>
+
+<p>
+    <a asp-action="CurrencyByDate" class="btn btn-primary">Conversion rates by date</a>
+    <a asp-action="Converter" class="btn btn-primary">Calculate</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Datum_primjene)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Drzava)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valuta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Jedinica)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Srednji_tecaj)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Datum_primjene)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Drzava)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valuta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Jedinica)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Srednji_tecaj)
+            </td>
+
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Knjiznica.Presentation.Models.ValutaViewModel>
+
+@{
+    ViewData["Title"] = "CurrencyByDate";
+}
+
+<h1>Conversion rates by date</h1>
+
+<p>
+    <a asp-action="Converter" class="btn btn-primary">Calculate</a>
+    <a asp-action="View" class="btn btn-primary">All currency</a>
+</p>
+
+<form asp-action="CurrencyByDate">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <input type="date" name="srcDate" Max="2050-01-01" onfocus="this.max=new Date().toISOString().split('T')[0]" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Calculate" class="btn btn-outline-primary" />
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Drzava)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valuta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Jedinica)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Srednji_tecaj)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Drzava)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Valuta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Jedinica)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Srednji_tecaj)
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+

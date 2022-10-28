@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Knjiznica.Core.Models.ViewModels.RentViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>All rents of: @ViewData["Name"]</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<a asp-action="Index" class="btn btn-primary"> Back to full list</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParam"]">
+                    @Html.DisplayNameFor(model => model.DateRented)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["IsLate"]">
+                    @Html.DisplayNameFor(model => model.IsLate)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookTitle)
+                <form asp-action="Index" method="get" asp-route-seachString="@ViewData["TitleFilter"]">
+                    <p>
+                        <input type="text" name="searchTitle" value="@ViewData["TitleFilter"]" />
+                    </p>
+                </form>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MemberName)
+                <form asp-action="Index" method="get" asp-route-seachString="@ViewData["MemberFilter"]">
+                    <p>
+                        <input type="text" name="searchMember" value="@ViewData["MemberFilter"]" />
+                    </p>
+                </form>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateRented)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsLate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BookTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MemberName)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.RentId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.RentId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
