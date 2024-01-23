@@ -2,6 +2,7 @@
 using Knjiznica.Core.Services.Queries.Currency;
 using Knjiznica.Core.Services;
 using Newtonsoft.Json;
+using Knjiznica.Infrastructure.Common;
 
 namespace Knjiznica.Infrastructure.Handlers.Currency
 {
@@ -21,7 +22,7 @@ namespace Knjiznica.Infrastructure.Handlers.Currency
             };
 
 
-            var gertCurrency = await client.GetAsync("https://api.hnb.hr/tecajn/v2");
+            var gertCurrency = await client.GetAsync(HnbAPI.GetRates);
             var gertCurrencyresp = await gertCurrency.Content.ReadAsStringAsync();
             var repositories = JsonConvert.DeserializeObject<List<ValutaModel>>(gertCurrencyresp, settings);
 

@@ -5,156 +5,163 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Knjiznica.Presentation
 build_property.RootNamespace = Knjiznica.Presentation
-build_property.ProjectDir = C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Presentation\
+build_property.ProjectDir = C:\Users\Topolko\Documents\Code\KnjiznicaClean\KnjiznicaClean\Knjiznica.Presentation\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\LTopolko\Code\Git\Luka\KnjiznicaClean\Knjiznica.Presentation
+build_property.MSBuildProjectDirectory = C:\Users\Topolko\Documents\Code\KnjiznicaClean\KnjiznicaClean\Knjiznica.Presentation
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Authors/AuthorsBooks.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Authors/AuthorsBooks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xBdXRob3JzQm9va3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Authors/Create.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Authors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Authors/Delete.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Authors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Authors/Edit.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Authors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Authors/Index.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Authors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Books/BooksRents.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Books/BooksRents.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQm9va3NSZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Books/Create.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Books/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Books/Delete.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Books/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Books/Edit.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Books/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Books/Index.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Books/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Genres/Create.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Genres/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Genres/Delete.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Genres/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Genres/Edit.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Genres/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Genres/GenresBooks.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Genres/GenresBooks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXEdlbnJlc0Jvb2tzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Genres/Index.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Genres/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Home/Index.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Home/Privacy.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Members/Create.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Members/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Members/Delete.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Members/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Members/Details.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Members/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Members/Edit.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Members/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Members/Index.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Members/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Members/MembersRents.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Members/MembersRents.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xNZW1iZXJzUmVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Rents/Create.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Rents/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Rents/Delete.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Rents/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Rents/Details.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Rents/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Rents/Edit.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Rents/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Rents/Index.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Rents/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Shared/Error.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Valute/Converter.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Valute/Converter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsdXRlXENvbnZlcnRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Valute/CurrencyByDate.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Valute/CurrencyByDate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsdXRlXEN1cnJlbmN5QnlEYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Valute/View.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Valute/RateByDateAndCurrency.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsdXRlXFJhdGVCeURhdGVBbmRDdXJyZW5jeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Valute/View.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsdXRlXFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/_ViewImports.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/_ViewStart.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LTopolko/Code/Git/Luka/KnjiznicaClean/Knjiznica.Presentation/Views/Shared/_Layout.cshtml]
+[C:/Users/Topolko/Documents/Code/KnjiznicaClean/KnjiznicaClean/Knjiznica.Presentation/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-pna9sdsmjg

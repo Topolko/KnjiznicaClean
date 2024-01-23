@@ -7,6 +7,7 @@
 <h1>Currency converter</h1>
 
 <p>
+    <a asp-action="RateByDateAndCurrency" class="btn btn-primary">RateByDateAndCurrency</a>
     <a asp-action="CurrencyByDate" class="btn btn-primary">Conversion rates by date</a>
     <a asp-action="View" class="btn btn-primary">All currency</a>
 </p>
@@ -35,7 +36,7 @@
         })
 
             <div class="form-group">
-                <input type="number" min="1" name="toConvert" /> KN
+                <input type="number" min="1" name="toConvert" /> 
             </div>
 
             <div class="form-group">
@@ -50,6 +51,7 @@
             <h6>
                 @Html.DisplayFor(model => model.ConvertedValue)
             </h6>
+            <h6>EUR </h6>
         </dd>
         </form>
     </div>

@@ -11,9 +11,9 @@ namespace Knjiznica.Core.Services.Queries.Currency
     public class ConvertForDateQuery : IRequest<decimal>
     {
         public readonly string Valuta;
-        public readonly DateTime Date;
+        public readonly string Date;
         public readonly decimal Iznos;
-        public ConvertForDateQuery(string valuta, DateTime date, decimal iznos)
+        public ConvertForDateQuery(string valuta, string date, decimal iznos)
         {
             Valuta = valuta;
             Date = date;

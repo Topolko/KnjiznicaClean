@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Presentation\\Knjiznica.Presentation.csproj": {}
+    "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Presentation\\Knjiznica.Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj": {
+    "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj",
         "projectName": "Knjiznica.Core",
-        "projectPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj",
-        "packagesPath": "C:\\Users\\LTopolko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Core\\obj\\",
+        "projectPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj",
+        "packagesPath": "C:\\Users\\Topolko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LTopolko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Topolko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,6 +68,12 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "theCodeReaper.MediatR.DDD": {
               "target": "Package",
               "version": "[1.0.8, )"
@@ -89,21 +95,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj": {
+    "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj",
         "projectName": "Knjiznica.Infrastructure",
-        "projectPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\LTopolko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Topolko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LTopolko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Topolko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -117,8 +123,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj": {
-                "projectPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj"
+              "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj": {
+                "projectPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj"
               }
             }
           }
@@ -151,6 +157,10 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
+            "Microsoft.EntityFrameworkCore.Relational.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.10, )"
@@ -178,21 +188,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Presentation\\Knjiznica.Presentation.csproj": {
+    "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Presentation\\Knjiznica.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Presentation\\Knjiznica.Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Presentation\\Knjiznica.Presentation.csproj",
         "projectName": "Knjiznica.Presentation",
-        "projectPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Presentation\\Knjiznica.Presentation.csproj",
-        "packagesPath": "C:\\Users\\LTopolko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Presentation\\obj\\",
+        "projectPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Presentation\\Knjiznica.Presentation.csproj",
+        "packagesPath": "C:\\Users\\Topolko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LTopolko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Topolko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -206,11 +216,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj": {
-                "projectPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj"
+              "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj": {
+                "projectPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj"
               },
-              "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj"
+              "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj"
               }
             }
           }
@@ -232,6 +242,16 @@
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -261,7 +281,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -20,10 +20,11 @@ namespace Knjiznica.Core.Models.Models
         public string? Drzava_iso { get; set; }
         public int? Sifra_valute { get; set; }
         public string? Valuta { get; set; }
-        public int Jedinica { get; set; }
-        public decimal Kupovni_tecaj { get; set; }
-        public decimal Srednji_tecaj { get; set; }
-        public decimal Prodajni_tecaj { get; set; }
+        public int? Jedinica { get; set; }
+        public decimal? Kupovni_tecaj { get; set; }
+        public decimal? Srednji_tecaj { get; set; }
+        public decimal? Prodajni_tecaj { get; set; }
     }
-
 }
+
+

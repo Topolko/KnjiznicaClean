@@ -2063,19 +2063,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LTopolko\\.nuget\\packages\\": {}
+    "C:\\Users\\Topolko\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\ConsoleTest\\ConsoleTest.csproj",
+      "projectUniqueName": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\ConsoleTest\\ConsoleTest.csproj",
       "projectName": "ConsoleTest",
-      "projectPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\ConsoleTest\\ConsoleTest.csproj",
-      "packagesPath": "C:\\Users\\LTopolko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\ConsoleTest\\obj\\",
+      "projectPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\ConsoleTest\\ConsoleTest.csproj",
+      "packagesPath": "C:\\Users\\Topolko\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\ConsoleTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LTopolko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Topolko\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2089,8 +2089,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj": {
-              "projectPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj"
+            "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj": {
+              "projectPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj"
             }
           }
         }
@@ -2126,7 +2126,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },

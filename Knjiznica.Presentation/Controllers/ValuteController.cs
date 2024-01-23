@@ -23,27 +23,22 @@ namespace Knjiznica.Presentation.Controllers
     public class ValuteController : Controller
     {
 
-        readonly IQueryHandler<GetConversionRateQuery, List<ValutaModel>> _getConversionRate;
         readonly IQueryHandler<GetAllRatesQuery, List<ValutaModel>> _getAllRates;
         readonly IQueryHandler<GetRatesByDateQuery, List<ValutaModel>> _getRatesByDay;
         readonly IQueryHandler<ConvertQuery, decimal> _convert;
-        readonly IMultipleQueryHandler<GetConversionRateQuery, GetRatesByDateQuery, List<ValutaModel>> _currencyAndDate;
+        readonly IQueryHandler<GetRatesForDateQuery, List<ValutaModel>> _getRatesForDate;
 
         public ValuteController(
-           IQueryHandler<GetConversionRateQuery, List<ValutaModel>> getConversionRates,
            IQueryHandler<GetAllRatesQuery, List<ValutaModel>> getAllRates,
            IQueryHandler<GetRatesByDateQuery, List<ValutaModel>> getRatesByDate,
-           IMultipleQueryHandler<GetConversionRateQuery, GetRatesByDateQuery, List<ValutaModel>> currencyAndDate,
-           IQueryHandler<ConvertQuery, decimal> convert)
+           IQueryHandler<ConvertQuery, decimal> convert,
+           IQueryHandler<GetRatesForDateQuery, List<ValutaModel>> getRatesForDate)
         {
-            _getConversionRate = getConversionRates;
             _getAllRates = getAllRates;
             _getRatesByDay = getRatesByDate;
-            _currencyAndDate = currencyAndDate;
             _convert = convert;
+            _getRatesForDate = getRatesForDate;
         }
-
-
 
         public async Task <IActionResult> View()
         {
@@ -66,8 +61,6 @@ namespace Knjiznica.Presentation.Controllers
 
                                  });
 
-
-
             return View(RQViewModel);
         }
 
@@ -81,7 +74,6 @@ namespace Knjiznica.Presentation.Controllers
 
             var converted = await _convert.HandleAsync(new ConvertQuery(odabranaValuta, Odabrani_tecaj, toConvert));
 
-
             ValutaListViewModel valuteListViewModel = new ValutaListViewModel();
             valuteListViewModel.ValuteList = ListValuta;
             valuteListViewModel.ConvertedValue = converted;
@@ -89,10 +81,14 @@ namespace Knjiznica.Presentation.Controllers
             return  View(valuteListViewModel);
         }
 
-
         public async Task<IActionResult> CurrencyByDate(DateTime srcDate)
         {
-            var DQ = await _getRatesByDay.HandleAsync(new GetRatesByDateQuery());
+            string date = null;
+            if (srcDate != default)
+            {
+                date = srcDate.ToString("yyyy-MM-dd");
+            }
+            var DQ = await _getRatesByDay.HandleAsync(new GetRatesByDateQuery(date));
 
             var DQViewModel = (from b in DQ
 
@@ -112,6 +108,43 @@ namespace Knjiznica.Presentation.Controllers
                                });
 
             return  View(DQViewModel);
+        }
+        public async Task<IActionResult> RateByDateAndCurrency(DateTime srcDate, string ValuteList)
+        {
+            string odabranaValuta = ValuteList;
+
+            string date = null;
+            if (srcDate != default)
+            {
+                date = srcDate.ToString("yyyy-MM-dd");
+            }
+            var RDC = await _getRatesForDate.HandleAsync(new GetRatesForDateQuery(odabranaValuta, date));
+
+            var allRates = await _getAllRates.HandleAsync(new GetAllRatesQuery());
+            var ListValuta = allRates.ToList().Select(x => x.Valuta).ToList();
+
+            List<ValutaViewModel> RDCViewModel = (from b in RDC
+
+                               select new ValutaViewModel()
+                               {
+                                   Broj_tecajnice = b.Broj_tecajnice,
+                                   Datum_primjene = b.Datum_primjene,
+                                   Drzava = b.Drzava,
+                                   Drzava_iso = b.Drzava_iso,
+                                   Sifra_valute = b.Sifra_valute,
+                                   Valuta = b.Valuta,
+                                   Jedinica = b.Jedinica,
+                                   Kupovni_tecaj = b.Kupovni_tecaj,
+                                   Srednji_tecaj = b.Srednji_tecaj,
+                                   Prodajni_tecaj = b.Prodajni_tecaj
+
+                               }).ToList();
+
+            ValutaListViewModel valuteListViewModel = new ValutaListViewModel();
+            valuteListViewModel.ValuteList = ListValuta;
+            valuteListViewModel.Valuta_ViewModelsList = RDCViewModel;
+
+            return View(valuteListViewModel);
         }
 
     }

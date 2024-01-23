@@ -78,16 +78,17 @@
           }
         }
       },
-      "Humanizer.Core/2.2.0": {
+      "Humanizer.Core/2.8.26": {
         "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
         "compile": {
-          "lib/netstandard1.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.0/Humanizer.dll": {}
+          "lib/netstandard2.0/Humanizer.dll": {
+            "related": ".xml"
+          }
         }
       },
       "JetBrains.Annotations/2022.1.0": {
@@ -1216,6 +1217,26 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Design/6.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Humanizer.Core": "2.8.26",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.10"
+        },
+        "compile": {
+          "lib/net6.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.InMemory/6.0.10": {
         "type": "package",
         "dependencies": {
@@ -1245,6 +1266,23 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "1.1.6",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {
             "related": ".xml"
           }
         }
@@ -3844,6 +3882,7 @@
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.10",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.InMemory": "6.0.10",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
         },
         "compile": {
@@ -3966,16 +4005,20 @@
         "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
-    "Humanizer.Core/2.2.0": {
-      "sha512": "rsYXB7+iUPP8AHgQ8JP2UZI2xK2KhjcdGr9E6zX3CsZaTLCaw8M35vaAJRo1rfxeaZEVMuXeaquLVCkZ7JcZ5Q==",
+    "Humanizer.Core/2.8.26": {
+      "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
-      "path": "humanizer.core/2.2.0",
+      "path": "humanizer.core/2.8.26",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "humanizer.core.2.2.0.nupkg.sha512",
+        "humanizer.core.2.8.26.nupkg.sha512",
         "humanizer.core.nuspec",
-        "lib/netstandard1.0/Humanizer.dll"
+        "lib/netstandard1.0/Humanizer.dll",
+        "lib/netstandard1.0/Humanizer.xml",
+        "lib/netstandard2.0/Humanizer.dll",
+        "lib/netstandard2.0/Humanizer.xml",
+        "logo.png"
       ]
     },
     "JetBrains.Annotations/2022.1.0": {
@@ -5128,6 +5171,21 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.Design/6.0.10": {
+      "sha512": "SVqDfUftgBoKCMPfTaWXiKBZPHMjbiBJLE5WE7MeD28nTk7CkmUNX8eXyNIeWxpDuk4r0zZ6XG9zyG7Ef3KS4A==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.design/6.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/net6.0/Microsoft.EntityFrameworkCore.Design.props",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.6.0.10.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore.InMemory/6.0.10": {
       "sha512": "S9skLwgN8UxG3EJTPZfGS0X45fnbUXKy+0iGeGopuUzSSboBwUgTACiKCT8MYBPmLasIkrZlQo/5UwRfovEUeg==",
       "type": "package",
@@ -5154,6 +5212,21 @@
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
         "microsoft.entityframeworkcore.relational.6.0.10.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
+      "sha512": "kz7C0Ddnge16NRf4CU8GygYxOor3+oQ797//eXI+xbKlJr2ighAEkno9gOipDlym4SiFtKNNuOuBI/BDBGD7Kg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.relational.design/1.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.dll",
+        "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.xml",
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll",
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.xml",
+        "microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.design.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.SqlServer/6.0.10": {
@@ -10824,24 +10897,26 @@
       "Knjiznica.Infrastructure >= 1.0.0",
       "MediatR >= 11.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.0.0",
+      "Microsoft.EntityFrameworkCore.Design >= 6.0.10",
+      "Microsoft.EntityFrameworkCore.Relational.Design >= 1.1.6",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.10",
       "X.PagedList.Mvc.Core >= 8.4.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LTopolko\\.nuget\\packages\\": {}
+    "C:\\Users\\Topolko\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Presentation\\Knjiznica.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Presentation\\Knjiznica.Presentation.csproj",
       "projectName": "Knjiznica.Presentation",
-      "projectPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Presentation\\Knjiznica.Presentation.csproj",
-      "packagesPath": "C:\\Users\\LTopolko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Presentation\\obj\\",
+      "projectPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Presentation\\Knjiznica.Presentation.csproj",
+      "packagesPath": "C:\\Users\\Topolko\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LTopolko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Topolko\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10855,11 +10930,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj": {
-              "projectPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj"
+            "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj": {
+              "projectPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Core\\Knjiznica.Core.csproj"
             },
-            "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\LTopolko\\Code\\Git\\Luka\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj"
+            "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Topolko\\Documents\\Code\\KnjiznicaClean\\KnjiznicaClean\\Knjiznica.Infrastructure\\Knjiznica.Infrastructure.csproj"
             }
           }
         }
@@ -10881,6 +10956,16 @@
           "MediatR.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[11.0.0, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.10, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational.Design": {
+            "target": "Package",
+            "version": "[1.1.6, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
@@ -10910,7 +10995,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },

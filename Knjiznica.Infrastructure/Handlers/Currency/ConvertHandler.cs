@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Knjiznica.Infrastructure.Common;
 
 namespace Knjiznica.Infrastructure.Handlers.Currency
 {
@@ -26,34 +27,34 @@ namespace Knjiznica.Infrastructure.Handlers.Currency
             };
 
 
-            var gertCurrency = await client.GetAsync("https://api.hnb.hr/tecajn/v2?valuta=" + query.valuta);
+            var gertCurrency = await client.GetAsync(HnbAPI.RatesForCurrency + query.Valuta);
             var gertCurrencyResp = await gertCurrency.Content.ReadAsStringAsync();
             var Valuta = JsonConvert.DeserializeObject<List<ValutaModel>>(gertCurrencyResp, settings);
 
             decimal convertTo;
 
-            switch (query.tecaj)
+            switch (query.Tecaj)
             {
                 case "Kupovni":
-                    convertTo = Valuta.Select(x => x.Kupovni_tecaj).FirstOrDefault();
+                    convertTo = (decimal)Valuta.Select(x => x.Kupovni_tecaj).FirstOrDefault();
                     break;
                 case "Prodajni":
-                    convertTo = Valuta.Select(x => x.Prodajni_tecaj).FirstOrDefault();
+                    convertTo = (decimal)Valuta.Select(x => x.Prodajni_tecaj).FirstOrDefault();
                     break;
                 default:
-                    convertTo = Valuta.Select(x => x.Srednji_tecaj).FirstOrDefault();
+                    convertTo = (decimal)Valuta.Select(x => x.Srednji_tecaj).FirstOrDefault();
                     break;
             }
 
             decimal convertedValue;
 
-            if (query.toConvert <= 0 || query.toConvert == null)
+            if (query.ToConvert <= 0 || query.ToConvert == null)
             {
                 convertedValue = (decimal)(1 / convertTo);
             }
             else
             {
-                convertedValue = (decimal)(query.toConvert / convertTo);
+                convertedValue = (decimal)(query.ToConvert / convertTo);
             }
 
 

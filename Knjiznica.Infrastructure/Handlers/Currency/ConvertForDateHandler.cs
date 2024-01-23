@@ -27,7 +27,7 @@ namespace Knjiznica.Infrastructure.Handlers.Currency
             var tecaj = valuta.Srednji_tecaj;
             var converted = query.Iznos*tecaj;
 
-            return converted;
+            return (decimal)converted;
         }
     }
 }

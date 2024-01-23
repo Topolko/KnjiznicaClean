@@ -81,11 +81,10 @@ builder.Services.AddCommandHandler<DeleteMemberCommand, DeleteMemberHandler>();
 #endregion
 
 #region Currency
-builder.Services.AddQueryHandler<GetConversionRateQuery, List<ValutaModel>, GetConversionRateHandler>();
 builder.Services.AddQueryHandler<GetAllRatesQuery, List<ValutaModel>, GetAllRatesHandler>();
 builder.Services.AddQueryHandler<GetRatesByDateQuery, List<ValutaModel>, GetRatesByDateHandler>();
-builder.Services.AddMultipleQueryHandler<GetConversionRateQuery, GetRatesByDateQuery, List<ValutaModel>, CurrencyAndDateHandler>();
 builder.Services.AddQueryHandler<ConvertQuery, decimal, ConvertHandler>();
+builder.Services.AddQueryHandler<GetRatesForDateQuery, List<ValutaModel>, GetRatesForDateHandler>();
 
 #endregion
 

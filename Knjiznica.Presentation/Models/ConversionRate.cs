@@ -18,6 +18,8 @@ namespace Knjiznica.Presentation.Models
 
         public List<string>? Odabrana_Valuta { get; set; }
 
+        public List<ValutaViewModel> Valuta_ViewModelsList { get; set; }
+
     }
 
     public class ValutaViewModel

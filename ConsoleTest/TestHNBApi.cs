@@ -30,12 +30,14 @@ namespace ConsoleTest
 
             string valuta = "DKK";
 
-            var getCurrency = await client.GetAsync("https://api.hnb.hr/tecajn/v2?valuta=" + valuta);
+            var getCurrency = await client.GetAsync("https://api.hnb.hr/tecajn-eur/v3?valuta=" + valuta);
             var gertCurrencyResp = await getCurrency.Content.ReadAsStringAsync();
             var Valuta = JsonConvert.DeserializeObject<List<ValutaModel>>(gertCurrencyResp, settings);
 
-
-
+            foreach (var item in Valuta)
+            {
+                Console.WriteLine(item.Valuta+", "+item.Srednji_tecaj);
+            }
 
         }
 

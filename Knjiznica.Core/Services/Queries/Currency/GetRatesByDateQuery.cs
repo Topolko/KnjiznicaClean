@@ -8,9 +8,14 @@ using System.Threading.Tasks;
 
 namespace Knjiznica.Core.Services.Queries.Currency
 {
-    public record GetRatesByDateQuery : IRequest<List<ValutaModel>>
+    public class GetRatesByDateQuery : IRequest<List<ValutaModel>>
     {
-        public DateTime? Date { get; set; }
-    };
+        public readonly string? Date;
+
+        public GetRatesByDateQuery (string? date)
+        {
+            Date = date;
+        }
+    }
 
 }
